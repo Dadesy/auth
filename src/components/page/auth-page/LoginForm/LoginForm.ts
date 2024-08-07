@@ -9,7 +9,7 @@ export default defineComponent({
       email: Yup.string()
         .required('Поле обязательно для заполнения.')
         .email('Поле email должно быть действительным электронным адресом.'),
-      password: Yup.string().required('Поле обязательно для заполнения.'),
+      password: Yup.string().required('Поле обязательно для заполнения.').min(8,'Пароль должен содержать 8 символов'),
     });
 
     const onSubmit = (data: ILoginForm): void => {
