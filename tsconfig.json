@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "esnext", // Компиляция кода в последнюю версию ECMAScript
+    "module": "esnext", // Использование модулей ECMAScript
+    "moduleResolution": "node", // Стратегия разрешения модулей Node.js
+    "lib": ["esnext", "dom"], // Библиотеки, которые будут включены в компиляцию
+    "strict": true, // Включение всех строгих проверок типов
+    "jsx": "preserve", // Сохранение JSX, Nuxt/Vue обрабатывает его
+    "experimentalDecorators": true, // Поддержка декораторов, как в Angular
+    "skipLibCheck": true, // Пропуск проверки типов файлов объявлений
+    "esModuleInterop": true, // Включает совместимость с системой модулей Babel
+    "allowSyntheticDefaultImports": true, // Позволяет импортировать модули без default экспорта
+    "forceConsistentCasingInFileNames": true, // Запрещает несогласованный регистр в именах файлов
+    "noImplicitReturns": true, // Запрещает отсутствующие возвращаемые значения в функциях
+    "noFallthroughCasesInSwitch": true, // Предотвращает случайное "протекание" кейсов в switch
+    "noImplicitAny": true, // Запрещает неявные объявления типа any
+    "strictNullChecks": true, // Включает строгую проверку на null
+    "strictFunctionTypes": true, // Запрещает несоответствие типов параметров функции
+    "strictBindCallApply": true, // Строгая проверка вызовов bind, call и apply
+    "strictPropertyInitialization": true, // Требует, чтобы свойства класса были инициализированы в конструкторе
+    "noUnusedLocals": true, // Ошибка при наличии неиспользуемых локальных переменных
+    "noUnusedParameters": true, // Ошибка при наличии неиспользуемых параметров функции
+    "types": ["@types/node"], // Указание дополнительных типов для включения
+    "baseUrl": ".", // Базовый каталог для разрешения неабсолютных имен файлов модулей
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  },
+  "include": ["src/**/*.ts", "src/**/*.vue", "src/**/*.d.ts"], // Указание файлов для включения в проект
+  "exclude": ["node_modules"] // Исключение каталога node_modules из процесса компиляции
+}

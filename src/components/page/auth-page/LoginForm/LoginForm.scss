@@ -1,0 +1,31 @@
+.form {
+  @apply font-roboto flex flex-col gap-6;
+}
+
+.form__label {
+  @apply flex flex-col items-start gap-2;
+}
+
+.form__input {
+  @apply font-roboto font-normal px-5 py-2.5 rounded-xl w-full border bg-slate-100 border-slate-300;
+}
+
+.form__input {
+  @apply mb-1;
+}
+
+.form__error-message {
+  @apply text-rose-600 text-sm;
+}
+
+.form__forgot-password {
+  @apply text-blue-700 font-roboto text-right link link-hover;
+}
+
+.form__submit-button {
+  @apply btn font-roboto bg-slate-800 hover:bg-slate-900 tracking-wider leading-5 text-lg font-normal text-white;
+}
+
+.label__text {
+  @apply font-roboto font-medium;
+}
